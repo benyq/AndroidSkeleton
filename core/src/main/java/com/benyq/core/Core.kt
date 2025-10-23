@@ -9,6 +9,7 @@ import com.tencent.mmkv.MMKV
  */
 object Core {
 
+    @JvmStatic
     fun setup(app: Application) {
         appCtx = app
         MMKV.initialize(app)
