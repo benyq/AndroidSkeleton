@@ -79,4 +79,7 @@ dependencies {
     api("io.github.cymchad:BaseRecyclerViewAdapterHelper4:4.3.2")
 
     api("com.github.bumptech.glide:glide:5.0.5")
+
+    // https://github.com/getActivity/XXPermissions
+    api("com.github.getActivity:XXPermissions:26.5")
 }
