@@ -9,7 +9,7 @@ import com.benyq.core.BuildConfig
  * @date 4/11/2024
  *
  */
-object L {
+object Logger {
     private var tag = "Core_Kit"
     private var enableLog = BuildConfig.DEBUG
 
@@ -30,7 +30,7 @@ object L {
                 s.substring(s.lastIndexOf('.'))
             }
             o is Class<*> -> o.simpleName
-            else -> o.javaClass.simpleName +'@'+Integer.toHexString(o.hashCode())
+            else -> o.toString()
         }
     }
 

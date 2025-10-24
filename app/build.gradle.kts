@@ -41,5 +41,7 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    implementation(project(":core"))
+    implementation(project(":core")){
+        exclude(group = "org.jspecify", module = "jspecify")
+    }
 }

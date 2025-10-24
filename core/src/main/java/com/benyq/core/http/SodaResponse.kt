@@ -10,4 +10,6 @@ interface SodaResponse<T> {
 
     fun getRealData(): T?
 
+
+    companion object {}
 }

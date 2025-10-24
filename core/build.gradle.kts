@@ -37,9 +37,6 @@ android {
     }
 }
 
-configurations.all {
-    exclude(group = "org.jspecify", module = "jspecify")
-}
 
 dependencies {
     testImplementation("junit:junit:4.13.2")
