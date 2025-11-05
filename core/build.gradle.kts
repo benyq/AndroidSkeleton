@@ -79,4 +79,7 @@ dependencies {
 
     // https://github.com/getActivity/XXPermissions
     api("com.github.getActivity:XXPermissions:26.5")
+
+    // DataStore Preferences
+    api("androidx.datastore:datastore-preferences:1.1.7")
 }
