@@ -2,6 +2,7 @@ package com.benyq.core.http
 
 import android.util.Log
 import com.benyq.core.BuildConfig
+import com.benyq.core.utils.Logger
 import com.google.gson.Gson
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
@@ -20,7 +21,7 @@ object RetrofitManager {
         networkInterceptors: List<Interceptor> = emptyList()
     ): T {
         val loggingInterceptor = HttpLoggingInterceptor { message ->
-            Log.d("benyq", "okhttp: $message")
+            Logger.d(this@RetrofitManager,"log", message)
         }.apply {
             level = if (BuildConfig.DEBUG) {
                 HttpLoggingInterceptor.Level.BODY
