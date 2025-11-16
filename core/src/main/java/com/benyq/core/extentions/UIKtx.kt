@@ -23,10 +23,10 @@ import kotlin.coroutines.resume
 suspend fun Context.alert(title: String, message: String): Boolean =
     suspendCancellableCoroutine { continuation ->
         AlertDialog.Builder(this)
-            .setNegativeButton("No") { dialog, which ->
+            .setNegativeButton("否") { dialog, which ->
                 dialog.dismiss()
                 continuation.resume(false)
-            }.setPositiveButton("Yes") { dialog, which ->
+            }.setPositiveButton("是") { dialog, which ->
                 dialog.dismiss()
                 continuation.resume(true)
             }.setTitle(title)
